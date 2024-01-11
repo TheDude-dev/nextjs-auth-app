@@ -17,16 +17,16 @@ const userSchema = new mongoose.Schema({
     },
     isVerified: {
         type: Boolean,
-        default: false
+        default: false,
     },
     isAdmin: {
         type: Boolean,
-        default: false
+        default: false,
     },
     forgotPasswordToken: String,
     forgotPasswordTokenExpiry: Date,
     verifyToken: String,
-    verifyTokenExpiry: Date
+    verifyTokenExpiry: Date,
 })
 
 // IF there's a user add, if not create
